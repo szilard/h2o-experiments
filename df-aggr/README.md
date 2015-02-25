@@ -1,12 +1,12 @@
 
 #### Doing tabular data aggegates with H2O
 
-While H2O has not been designed for this, trying to see how fast it can do aggregates
+While H2O has not been designed for this, I'm trying to see how fast it can do aggregates
 with tabular data (e.g. average of one column grouped by other column). Will compare
 with R/data.table ([fast](http://datascience.la/dplyr-and-a-very-basic-benchmark/),
 but single threaded).
 
-Running latest stable (2.8.4.4) on 16-core single node, 64GB RAM.
+Running latest stable H2O (2.8.4.4) on 16-core single node, 64GB RAM.
 
 Generated 100-million row CSV file with 2 columns: `x` int 1..10^6 and `y` float [0,1].
 
@@ -74,11 +74,11 @@ data.table:
 d[, mean(y), by=x]
 ```
 
-H2O's ddply was very slow (kill after not finishing in 5 minutes),
+H2O's ddply was very slow (had to kill after not finishing in 5 minutes),
 data.table 12 seconds.
 
 
-###### Counts
+##### Counts
 
 If I can't do aggregates, I still can do counts:
 ```
