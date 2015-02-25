@@ -19,7 +19,7 @@ for (type in c("double","int")) {
     
     cat("======= type: ",type," === cores: ",k," =======\n")
     print(microbenchmark(dx <- generate_frame(type), times = 1))
-    print(microbenchmark(max(dx$C1), times = 5))
+    print(microbenchmark(sum(dx$C1), times = 5))
     
     h2o.shutdown(srvx, prompt = FALSE)
     Sys.sleep(5)
