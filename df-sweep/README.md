@@ -46,7 +46,7 @@ number of cores `1,2,3,...`
  ```
  
  Processing speed ~GB/sec (GB raw data). Strangely, the is no improvement for running
- of more than 3 cores for doubles or more than 6 cores for ints (I assume the higher throshold
+ on more than 3 cores for doubles or on more than 6 cores for ints (I assume the higher threshold
  is because of need for decompress the data).
  
  
