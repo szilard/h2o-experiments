@@ -49,7 +49,15 @@ number of cores `1,2,3,...`
  on more than 3 cores for doubles or on more than 6 cores for ints (I assume the higher threshold
  is because of need for decompress the data).
  
- 
- 
+ In contrast, in base R:
+ ```
+x_d <- runif(3e8)
+x_i <- sample(1:100, 3e8, replace = TRUE) 
+max(x_d)
+max(x_i)
+```
+it takes 1.5 sec for doubles, 0.46 sec for ints.
+
+
 
 
