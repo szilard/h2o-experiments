@@ -99,19 +99,19 @@ H2O 12 sec, data.table 6 sec. (Note data.table is single threaded, H2O saturates
 all cores.)
 
 
-##### Max
+##### sum
 
-Maybe if I just do sweeping over the data (and some simple computation) H2O is
+Maybe if I just do sweeping over the data (and some simple computation like `sum`) H2O is
 gonna win with multi-core.
 
 H2O:
 ```
-max(dx$x)
+sum(dx$y)
 ```
 
 data.table:
 ```
-max(d$x)
+sum(d$y)
 ```
 
 H2O 2 sec, data.table 0.2 sec.

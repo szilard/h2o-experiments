@@ -20,6 +20,6 @@ system.time(
 
 
 system.time(
-  max(d$x)
+  sum(d$y)
 )
 ## 0.2 s

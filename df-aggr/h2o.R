@@ -27,7 +27,7 @@ system.time(
 
 
 system.time(
-  max(dx$x)
+  sum(dx$y)
 )
 ## 2 sec
 
