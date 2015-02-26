@@ -24,6 +24,7 @@ taskset -c 1,2,3,4 java -Xmx25g -jar h2o-2.8.4.4/h2o.jar
 ```
 
 Run times:
+
 nodes | cores | time(sec)
 ------|-------|-----------
 1     |   1   | 5.51
