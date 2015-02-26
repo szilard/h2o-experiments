@@ -95,7 +95,7 @@ data.table:
 d[, .N, by=x]
 ```
 
-H2O 12 sec, data.table 6 sec. (Note data.table is single threaded, H2O saturates
+H2O 12 sec, data.table 6 sec, 2x. (Note data.table is single threaded, H2O saturates
 all cores.)
 
 
@@ -114,7 +114,7 @@ data.table:
 sum(d$y)
 ```
 
-H2O 2 sec, data.table 0.2 sec.
+H2O 2 sec, data.table 0.2 sec, 10x.
 
 
 ##### Conclusion
