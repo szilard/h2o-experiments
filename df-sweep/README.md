@@ -56,7 +56,7 @@ x_i <- sample(1:100, 3e8, replace = TRUE)
 sum(x_d)
 sum(x_i)
 ```
-it takes 0.48 sec for doubles, 0.42 sec for ints.
+it takes 0.48 sec for doubles, 0.42 sec for ints, 10x faster than H2O.
 
 
 
