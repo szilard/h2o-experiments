@@ -49,6 +49,8 @@ cores | time 1-node | time 2-node
 16    |    1.29     |   1.00
 32    |             |   0.84
 
+![image](https://github.com/szilard/h2o-experiments/blob/master/df-sweep2/runtimes.png)
+
 In contrast, in base R:
 ```
 x <- runif(2e8)
